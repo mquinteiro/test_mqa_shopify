@@ -8,3 +8,7 @@
         e.preventDefault();
     });
 })();
+
+mqa_sent = function() {
+    console.log("mqa_sent function called on sucssedd! Contact");
+}
