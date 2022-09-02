@@ -7,8 +7,8 @@
         console.log(e);
         e.preventDefault();
     });
+    if (mqa_sent == true) {
+        console.log("mqa_sent is true");
+    }
 })();
 
-mqa_sent = function() {
-    console.log("mqa_sent function called on sucssedd! Contact");
-}

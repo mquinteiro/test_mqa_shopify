@@ -21,9 +21,10 @@
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+    <script> mqa_sent = false </script>
     {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
       {%- if form.posted_successfully? -%}
-        <script> mqa_sent(); </script>
+        <script> mqa_sent = true </script>
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
       {%- elsif form.errors -%}
         <div class="form__message">
